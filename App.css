@@ -1,0 +1,135 @@
+@import "animations/animations.css";
+@import "animations/animation-delays.css";
+body {
+  background-color: hsla(253, 57%, 25%, 0.313);
+  overflow: hidden;
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+.mainBody {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+
+  margin: 35px;
+  margin-top: 5rem;
+}
+.Projects {
+  display: grid;
+  grid-column: auto;
+  grid-row: 1fr 1fr;
+
+  margin-top: -100px;
+}
+.projectBox {
+  position: relative;
+  left: -10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  grid-row: 2;
+
+  font-size: 14px;
+}
+
+#Name, #Course, #School{
+  grid-column: 1;
+}
+.About {
+  position: relative;
+  text-align: justify;
+
+  grid-row: 1;
+  grid-column: 2;
+}
+#Title-1{
+  position: relative;
+  grid-row: 1;
+  font-size: 25px;
+  font-weight: 600;
+  animation: to-left 2s cubic-bezier(.92,.07,.47,.3), fade-in 2s ease-in-out;
+}
+#Text-1{
+  position: relative;
+  opacity: 0;
+
+  animation: to-top 2s cubic-bezier(.92,.07,.47,.3), fade-in 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 400ms;
+}
+#Name {
+  position: relative;
+  margin-top: 50px;
+  font-family: Roboto-Regular;
+  font-size: 30px;
+  animation: to-top 2s cubic-bezier(.92,.07,.47,.3), fade-in 2s ease-in-out;
+}
+#Course, #School {
+  position: relative;
+  opacity: 0;
+  animation: to-left 2s cubic-bezier(.92,.07,.47,.3), fade-in 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+#Course {
+  animation-delay: 1s;
+}
+#School {
+  animation-delay: 2s;  
+}
+#icon-1, #icon-2 {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+}
+
+#Title-2 {
+  position: relative;
+  grid-row: 1;
+  font-size: 25px;
+  font-weight: 600;
+  animation: to-left 2s cubic-bezier(.92,.07,.47,.3), fade-in 2s ease-in-out;
+}
+#proj-1, #proj-2, #proj-3, #proj-4 {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+
+  opacity: 0;
+
+  animation: to-top 2s cubic-bezier(.92,.07,.47,.3), fade-in 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* Transition: to-top fade-in transition with delay for each item*/
+#proj-1 {animation-delay: 400ms;}
+#proj-2 {animation-delay: 800ms;}
+#proj-3 {animation-delay: 1200ms;}
+#proj-4 {animation-delay: 1600ms;}
+
+#proj-1:hover, #proj-2:hover, #proj-3:hover, #proj-4:hover {
+ background-color: hsla(0, 0%, 100%, 0.645);
+}
+.socialLinks{
+ position: relative;
+ top: -240px;
+ 
+ opacity: 0;
+ margin-left: 35px;
+
+ animation: to-left 2s cubic-bezier(.92,.07,.47,.3), fade-in 1s ease-in-out;
+ animation-fill-mode: forwards;
+ animation-delay: 3s;
+}
+
+#placeholder-img {
+  height: 100px;
+  width: 200px;
+  image-rendering: crisp-edges;
+}

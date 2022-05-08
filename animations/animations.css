@@ -1,0 +1,12 @@
+@keyframes fade-in {
+    0%         {opacity: 0;}
+    100%        {opacity: 1.0;}
+}
+@keyframes to-top {
+    0%         {top: -30px;}
+    20%        {top: 0px;}
+}
+@keyframes to-left {
+    0%      {left: -30px;}
+    20%     {left: 0px;}
+}
